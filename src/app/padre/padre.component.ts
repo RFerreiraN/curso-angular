@@ -5,6 +5,18 @@ import { Component } from '@angular/core';
   templateUrl: './padre.component.html',
   styleUrls: ['./padre.component.css']
 })
-export class PadreComponent {
 
+
+export class PadreComponent {
+  contador: number = 0;
+  incrementar() {
+    this.contador++
+  }
+  decrementar()  {
+    this.contador--
+  }
+
+  reset(){
+    this.contador = 0
+  }
 }
